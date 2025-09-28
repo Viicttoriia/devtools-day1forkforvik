@@ -1,4 +1,4 @@
-// Error 1:
+// Error 1::
 let message = 'Welcome to the debugging exercise!';
 console.log(message); 
 
@@ -88,7 +88,7 @@ console.log(numbers);
 console.log(x);
 x = 5;
 
-// Error 20:
+// Error 20::
 let myString = 'Hello';
 myString.property = 'World';
 console.log(myString.property); 
