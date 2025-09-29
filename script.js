@@ -3,9 +3,19 @@ let message = 'Welcome to the debugging exercise!';
 console.log(message); 
 
 // Error 2: 
+console.log(document);
+/*ways to access elements of the document - getelements and queryselector
+*/
 let button = document.querySelector('.actionButton'); 
-button.addEventListener('click', eventHandler); 
 
+/* Everything is an Object
+*/
+/*when you click the button it is logged in the console*/
+console.log(button.outerHTML);
+/*adding outerHTML allows you to see the string*/
+/*event listeners are ways you can attach live actions in javascript*/
+button.addEventListener('click', eventHandler); 
+/*functions are independet \ methods are bound to an object*/
 // Error 3: 
 function eventHandler() {
   console.log('Button clicked');
@@ -21,9 +31,10 @@ function displayOutput() {
 // Error 6: Misusing variable scope
 function updateMessage() {
   let localMessage = 'Updated message';
+  console.log(localMessage); 
 }
 updateMessage();
-console.log(localMessage); 
+
 
 // Error 7:
 document.getElementById('testButton').addEventListener('click', testFunction());
@@ -61,7 +72,12 @@ console.log(user.name)
 let someNumber = 123;
 console.log(someNumber.toUpperCase()); 
 
-// Error 15: 
+// Error 15:
+// three types of variables
+// let 
+// const - value that can not change
+// var - var that can be updated
+/* different notation */ 
 let greeting = Hello, world!;
 
 // Error 16: 
@@ -69,12 +85,13 @@ for (let i = 0; i < 5; i++); {
     console.log(i);
 }
 
-// Error 17:
+// Error 17::
 let five = '5';
 if (five === 5) {
     console.log('Five is equal to 5'); // This one should be logged
 } else {
     console.log('Five is not equal to 5'); 
+}
 
 // Error 18:
 Array.prototype.push = function() {
@@ -92,4 +109,4 @@ x = 5;
 let myString = 'Hello';
 myString.property = 'World';
 console.log(myString.property); 
-}
+
