@@ -1,7 +1,7 @@
-// Error 1::
+// Error 1:
 let message = 'Welcome to the debugging exercise!';
 console.log(message); 
-
+/* just a spelling mistake */
 // Error 2: 
 console.log(document);
 /*ways to access elements of the document - getelements and queryselector
@@ -34,7 +34,7 @@ function updateMessage() {
   console.log(localMessage); 
 }
 updateMessage();
-
+/*console.log needed to me moved to complete call function*/
 
 // Error 7:
 document.getElementById('testButton').addEventListener('click', testFunction());
@@ -42,12 +42,12 @@ document.getElementById('testButton').addEventListener('click', testFunction());
 function testFunction() {
   console.log('Test function executed');
 }
-
+/* button was clicked */
 // Error 8:
 let number1 = 10;
 let number2 = 5;
 console.log('Sum is: ' + (number1 - number2));
-
+/* console should state sum is 5 */
 // Error 9: 
 let nullVar = null;
 console.log(nullVar.length);
